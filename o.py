@@ -2,7 +2,8 @@
 >>> pattern='phone'
 >>> re.search(pattern,text)
 <_sre.SRE_Match object; span=(10, 15), match='phone'>
->>> match=re.search(pattern,text)
+>>> match=re.search(pattern,text)#Returns a Match object if there is a match anywhere in the string
+
 >>> match
 <_sre.SRE_Match object; span=(10, 15), match='phone'>
 >>> match.span()
@@ -15,7 +16,7 @@
 <_sre.SRE_Match object; span=(10, 15), match='phone'>
 >>> text
 'the agent phone no is 408-555-1234.call soon'
->>> matches=re.findall('phone',text)
+>>> matches=re.findall('phone',text)#Returns a list containing all matches
 >>> matches
 ['phone']
 text='my phone no is 408-555-1234'
@@ -35,7 +36,7 @@ phone_pattern=re.compile(r'(\d{3})-(\d{3})-(\d{4})')
 ['at', 'at', 'at']
 >>> re.findall(r'.at','the cat in the hat sat there')
 ['cat', 'hat', 'sat']
->>> re.findall(r'^\d','1 is a number')
+>>> re.findall(r'^\d','1 is a number')#check if it starts with number
 ['1']
 >>> phrase='there are 3 numbers 34 inside 5 this sentence'
 >>> pattern=r'[^\d]
@@ -56,7 +57,10 @@ SyntaxError: EOL while scanning string literal
 >>> ' '.join(clean)
 'this is a string but it has punctuation how can we remove it'
 >>> text='hypen-words long-ishh'
->>> pattern=r'[\w]+
+>>> pattern=r'[\w]+    
+#Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)
+ #\W=#Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
+
   File "<stdin>", line 1
     pattern=r'[\w]+
                   ^

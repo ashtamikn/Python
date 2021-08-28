@@ -35,7 +35,7 @@ class Player:
   def remove_one(self):
      return self.all_cards.pop(0)
   def add_cards(self,new_cards):
-     if type(new_cards)==type([]):
+      type(new_cards)==type([]):
        self.all_cards.extend(new_cards)
      else:
        self.all_cards.append(new_cards)  
