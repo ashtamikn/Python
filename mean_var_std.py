@@ -22,7 +22,7 @@ print(round(numpy.std(A,axis=None),11))#rond decimal position to 11
 
 # my_array = numpy.array([ [1, 2], [3, 4] ])
 
-# print numpy.std(my_array, axis = 0)         #Output : [ 1.  1.]
+# print numpy.std(my_array, axis = 0)         #qqOutput : [ 1.  1.]
 # print numpy.std(my_array, axis = 1)         #Output : [ 0.5  0.5]
 # print numpy.std(my_array, axis = None)      #Output : 1.11803398875
 # print numpy.std(my_array)                   #Output : 1.11803398875
