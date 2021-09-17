@@ -1,7 +1,7 @@
 n = input()
 l = []
 for _ in range(n):
-    s = input().split()
+    s = input().split()#list
     cmd = s[0]
     args = s[1:]
     if cmd !="print":
