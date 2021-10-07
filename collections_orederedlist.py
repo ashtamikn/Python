@@ -12,7 +12,7 @@ dicti=OrderedDict()
 for i in range(n):
     *k,v=input().split()
     k=' '.join(k)
-    dicti[k]=dicti.get(k,0)+int(v)
+    dicti[k]=dicti.get(k,0)+int(v)#gets k value adds v to it if already exists...else default it takes 0 and adds v  to it
 for k,v in dicti.items():
     print(k,v)    
 #     from collections import OrderedDict

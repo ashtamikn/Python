@@ -1,0 +1,6 @@
+f=open('fileone.txt','w+')
+f.write('one file')
+f.close()
+f=open('filetwo.txt','w+')
+f.write('two file')
+f.close()
